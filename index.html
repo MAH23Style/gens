@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='styles.css'>
+    <title></title>
+</head>
+<body>
+<h1 class="title">Random Generators</h1>
+<div class="btncontainer">
+  <button role="button" id="rng" onclick="showRNG()"><abbr title="Random Number Generator">RNG</abbr></button>
+  <button role="button" onclick="showCoinFlip()">Coin Flip</button>
+  <button role="button" onclick="showColor()"><abbr title="Random Color Generator">RCG</abbr></button>
+</div>
+<div id="rngStuff">
+  <label for="min">Minimum</label>
+  <input type="number" id="min" placeholder="ex. 0" value="">
+  <label for="max">Maximum</label>
+  <input type="number" id="max" placeholder="ex. 5" value="">
+  <button onclick="getNumber()">Generate!</button>
+  <p id="temp"></p>
+  <button id="closeRNG" onclick="closeRNG()">Close</button>
+</div>
+<div id="coinStuff">
+  <button id="coin" onclick="flipCoin()">Flip a coin!</button>
+  <img id="coinResult" width="300" height="300"></img>
+  <button id="closeRNG" onclick="closeCoin()">Close</button>
+</div>
+<div id="colorStuff">
+  <button onclick="getRandomColor()">Generate a Random Color!</button>
+  <p id="randomColor"></p>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
